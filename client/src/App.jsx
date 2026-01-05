@@ -13,7 +13,7 @@ function App() {
     setResult('');
 
     try {
-      const response = await fetch('http://localhost:3000/api/analyze', {
+      const response = await fetch('https://analizador-de-cvs-con-ai.onrender.com', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ cvText: cv, jobDescription: job }),
